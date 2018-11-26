@@ -1,0 +1,71 @@
+.content {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+    font-size: 28px;
+    background-image: url("../assets/images/hs.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(127, 65, 69, 1);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    background-color: rgba(127, 65, 69, 0.6);
+    color: #F0EAD6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+li a:hover {
+    background-color: #F0EAD6;
+    color: #7F4145;
+    text-decoration: none;
+}
+
+
+p{
+    color:white;
+    padding:20px;
+    background-color: rgba(127, 65, 69, 0.2);
+
+}
+
+.active{
+    background-color: #F0EAD6;
+    color: #7F4145;
+    text-decoration: none;
+}
+
+.boton{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.buscador{
+    margin-inline-start: 20px;
+}
