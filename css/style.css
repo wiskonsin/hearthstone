@@ -86,6 +86,7 @@ p{
 .titulocarta{
     padding-left:0.5em;
     color: #F0EAD6;
+    text-align: center;
 }
 
 .propiedades{
@@ -135,4 +136,10 @@ p{
     cursor: pointer;
     transition:1s;
 
+}
+
+.carta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

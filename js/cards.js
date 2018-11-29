@@ -42,6 +42,7 @@ function buscar(){
             node.appendChild(textnode);
 
             var imagen = document.createElement("img");
+            imagen.setAttribute("class","carta");
             imagen.src = element.img;
 
             var clase = document.createTextNode(element.playerClass);
@@ -49,6 +50,8 @@ function buscar(){
             var frase = document.createTextNode(element.flavor);
             var lista1 = document.createElement("div");
             var lista2 = document.createElement("div");
+            var encabezado = document.createElement("div");
+            encabezado.setAttribute("class","titulocarta");
             var elemento1 = document.createElement("p");
             var elemento2 = document.createElement("p");
             var elemento3 = document.createElement("p");
@@ -62,13 +65,14 @@ function buscar(){
             lista2.appendChild(elemento3);
 
             col2.appendChild(lista1);
-            col1.appendChild(node);
+            encabezado.appendChild(node);
             col1.appendChild(imagen);
             col3.appendChild(lista2);
 
             row.appendChild(col3);
             row.insertBefore(col2,row.childNodes[0]);
             row.insertBefore(col1,row.childNodes[0]);
+            document.getElementById("resultados").appendChild(encabezado);
             document.getElementById("resultados").appendChild(row);
 
             $('img').on("error", function() {
