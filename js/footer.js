@@ -1,6 +1,6 @@
 (function(){
 
-    var url = "www.sitioweb.com";
+    var url = "Luis Riancho 2018";
     var footer = document.getElementById("footer");
     
     var ul = document.createElement("ul");

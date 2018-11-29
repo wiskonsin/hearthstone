@@ -4,6 +4,7 @@ var menu = document.getElementById("menu");
 
 var ul = document.createElement("ul");
 
+ul.setAttribute("class","menuppal");
 var inicio = document.createElement("li");
 var a = document.createElement('a');
 var linkText = document.createTextNode("Inicio");

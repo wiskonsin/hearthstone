@@ -47,11 +47,11 @@ function buscar(){
             var clase = document.createTextNode(element.playerClass);
             var tipo = document.createTextNode(element.type);
             var frase = document.createTextNode(element.flavor);
-            var lista1 = document.createElement("ul");
-            var lista2 = document.createElement("ul");
-            var elemento1 = document.createElement("li");
-            var elemento2 = document.createElement("li");
-            var elemento3 = document.createElement("li");
+            var lista1 = document.createElement("div");
+            var lista2 = document.createElement("div");
+            var elemento1 = document.createElement("p");
+            var elemento2 = document.createElement("p");
+            var elemento3 = document.createElement("p");
           
             elemento1.appendChild(clase);
             elemento2.appendChild(tipo);
@@ -61,9 +61,9 @@ function buscar(){
             lista1.insertBefore(elemento2,lista1.childNodes[0]);
             lista2.appendChild(elemento3);
 
-            col1.appendChild(lista1);
-            col2.appendChild(node);
-            col2.appendChild(imagen);
+            col2.appendChild(lista1);
+            col1.appendChild(node);
+            col1.appendChild(imagen);
             col3.appendChild(lista2);
 
             row.appendChild(col3);
@@ -79,7 +79,20 @@ function buscar(){
   
       } 
       else {
-        alert('No se ha conseguido recoger la carta.');
+        var modal = document.getElementById('myModal');
+        var span = document.getElementsByClassName("close")[0];
+        modal.style.display = "block";
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
       }
     }
     
